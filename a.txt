@@ -1,1 +1,25 @@
-aaa
+git: 分布式版本控制     SVN/CVS
+     maven: 项目管理
+仓库: 
+   工作区，暂存区，分支区( master, 分支)
+
+命令: 
+  git init    在本地创建仓库              
+  git add 文件名/.                    ->将本地文件加入暂存区
+  git commit -m "提示"           -> 将暂存区文件加入版本库
+
+git status    查看状态            
+                 untracked     committed        working directory        
+git diff 文件名
+git log     -> 得到每次提交的commitid
+git reset --hard HEAD^        回退一次, HEAD^指针，默认情况指向master分支的前面. 
+git reset --hard commitid    
+
+融合github.      源码托管平台.  
+1. 创建秘钥，将公钥提交到github. 
+2. 创建仓库. 
+    git clone 地址           
+    git add 文件名/.                    ->将本地文件加入暂存区
+    git commit -m "提示"           -> 将暂存区文件加入版本库
+
+     git push origin main
